@@ -18,7 +18,9 @@ html {
 .team-area {
   display: flex;
   width: 90%;
+  height: 100%;
   justify-content: space-around;
+  align-items: center;
 }
 
 .single-team {
@@ -54,7 +56,7 @@ html {
   display: block;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to top, #000, transparent);
+  background: linear-gradient(to top, #222, transparent);
   z-index: 2;
   transition: 0.5s;
   opacity: 0;
@@ -100,4 +102,13 @@ html {
 .team-text a i {
   color: #fff;
   padding: 6px 8px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 1226px) {
+  .team-area {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
