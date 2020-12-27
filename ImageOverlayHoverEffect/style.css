@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  width: 100%;
+  height: 100%;
+}
+
+.team-area {
+  display: flex;
+  width: 90%;
+  justify-content: space-around;
+}
+
+.single-team {
+  width: 360px;
+  height: 400px;
+  padding: 24px;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.6s ease-out;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.single-team:hover {
+  transform: translateY(15px);
+}
+
+.single-team:hover::before {
+  opacity: 1;
+}
+
+.single-team:hover .team-text {
+  opacity: 1;
+  transform: translatey(0);
+}
+
+.single-team::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000, transparent);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.single-team img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+.single-team .team-text {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(60px);
+  transition: 0.5s;
+}
+
+.team-text h2 {
+  margin: 0;
+  letter-spacing: 3px;
+}
+
+.team-text p {
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-top: 8px;
+}
+
+.team-text a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.team-text a i {
+  color: #fff;
+  padding: 6px 8px;
+}
