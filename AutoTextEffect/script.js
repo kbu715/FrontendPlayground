@@ -31,5 +31,6 @@ speedEl.addEventListener('input', (e) => {
 
 button.addEventListener('click', (e) => {
   stop = !stop;
+  button.innerText = stop ? 'START' : 'STOP';
   writeText();
 });
