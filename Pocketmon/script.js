@@ -1,3 +1,4 @@
+const modal = document.querySelector('.modal');
 const poke_container = document.getElementById('poke-container');
 const pokemon_count = 100;
 const colors = {
@@ -16,6 +17,10 @@ const colors = {
   fighting: '#E6E0D4',
   normal: '#F5F5F5',
 };
+
+// modal.addEventListener('click', () => {
+//   modal.classList.remove('active');
+// });
 
 const main_types = Object.keys(colors);
 console.log(main_types);
@@ -62,10 +67,24 @@ const createPokemonCard = (pokemon) => {
         <h3 class="name">${name}</h3>
         <small class="type">Type: <span>${type}</span></small>
     </div>
+    <div class="modal">
+    <img src="https://pokeres.bastionbot.org/images/pokemon/${pokemon.id}.png" width="500px" alt="">
+
+</div>
   `;
 
   pokemonEl.innerHTML = pokemonInnerHTML;
+
   poke_container.appendChild(pokemonEl);
+
+  pokemonEl.addEventListener('click', () => {
+    const modal = pokemonEl.querySelector('.modal');
+    if (modal.classList.contains('active')) {
+      modal.classList.remove('active');
+    } else {
+      modal.classList.add('active');
+    }
+  });
 };
 
 fetchPokemons();

@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+}
+
 body {
   background: #efefbb;
   background: linear-gradient(to right, #d4d3dd, #efefbb);
@@ -64,4 +68,18 @@ h1 {
 .pokemon .info .name {
   margin: 15px 0 7px;
   letter-spacing: 1px;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.modal.active {
+  display: block;
 }
