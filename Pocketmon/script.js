@@ -1,6 +1,6 @@
 const modal = document.querySelector('.modal');
 const poke_container = document.getElementById('poke-container');
-const pokemon_count = 100;
+const pokemon_count = 204;
 const colors = {
   fire: '#FDDFDF',
   grass: '#DEFDE0',
