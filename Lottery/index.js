@@ -4,7 +4,7 @@ const SETTING = {
     maxNumber: 45
 }
 
-function getRandomNumber({name, count, maxNumber}){
+function getRandomNumber({count, maxNumber}){
     //랜덤한 유일한 숫자값을 추출
 
     let randomNum = Math.floor(Math.random()*maxNumber);
@@ -24,8 +24,7 @@ function getRandomNumber({name, count, maxNumber}){
 
     }
 
-    setInstance.forEach(v => console.log(v))
-    console.log(name)
+    console.log(setInstance.values());
 
 }
 
