@@ -10,12 +10,18 @@
     
   <!-- 여기에 코드를 작성하세요 ❤️ -->
   <form action="" method="POST">
-  <input type="text" placeholder="이름을 입력하세요" minlength="5" maxlength="10" required value="방루이"/>
-  <input type="email" placeholder="이메일을 입력하세요"/>
-  <input type="password" placeholder="비밀번호를 입력하세요" minlength="10"/>
-  <input type="url" placeholder="포트폴리오 URL을 적으시오"/>
-  <input type="number" placeholder="나이를 입력하세요 (12세 이상 ~ 122세 이하)" min="12" max="122"/>
-  <input type="file" accept=".png, .jpg" />
+  <label for="user-name">이름</label>
+  <input id="user-name" type="text" placeholder="이름을 입력하세요" minlength="5" maxlength="10" required value="방루이"/>
+  <label for="user-email">이메일</label>
+  <input id="user-email" type="email" placeholder="이메일을 입력하세요"/>
+  <label for="user-password">비밀번호</label>
+  <input id="user-password" type="password" placeholder="비밀번호를 입력하세요" minlength="10"/>
+  <label for="user-url">URL</label>
+  <input id="user-url" type="url" placeholder="포트폴리오 URL을 적으시오"/>
+  <label for="user-age">나이</label>
+  <input id="user-age" type="number" placeholder="나이를 입력하세요 (12세 이상 ~ 122세 이하)" min="12" max="122"/>
+  <label for="user-profile-photo">프로필 사진</label>
+  <input id="user-profile-photo" type="file" accept=".png, .jpg" />
   <button>submit</button>
 </form>
 </body>
