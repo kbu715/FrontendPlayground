@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- radio and checkbox -->
+
+    <!-- input[type='radio'] -->
+    <!-- name = value 형식으로 서버에 전달이 될것! -->
+    <form action="" method="GET">
+        <input type="radio" id="subscribed" name="subscription" value="subscribed"/>
+        <label for="subscribed" >구독중</label>
+        <input type="radio" id="unsubscribed" name="subscription" value="unsubscribed"/>
+        <label for="unsubscribed" >미구독</label>
+        <button>submit</button>
+    </form>
+
+    <!-- input[type='checkbox'] -->
+    <form>
+        <input type="checkbox" id="html" name="skills" value="html">
+        <label for="html">HTML</label>
+        <input type="checkbox" id="css" name="skills" value="css">
+        <label for="css">HTML</label>
+        <input type="checkbox" id="js" name="skills" value="js">
+        <label for="js">HTML</label>
+        <button>서버로 전송</button>
+    </form>
+
+    <!-- name = value 형식을 기억할것 -->
+    <form action="" method="GET">
+        <label for="framework">프론트엔드 자바스크립트 프레임워크</label><br/>
+    <select name="framework" id="framework">
+        <option value="react">React</option>
+        <option value="vue">Vue</option>
+        <option value="angular">Angular</option>
+    </select>
+    <button type="submit">submit</button>
+    </form>
+
+
+    <!-- textarea -->
+    <label for="field">자기소개</label><br/>
+    <textarea id="field" placeholder="자기소개를 해주세요" rows="30" cols="50"></textarea>
+
+    <!-- button  -->
+
+    <button type="button">버튼</button>
+    <button type="submit">제출</button>
+    
+    <!-- 일을 하면서 쓸일이 있을까? -->
+    <button type="reset">리셋</button>
+</body>
+</html>
