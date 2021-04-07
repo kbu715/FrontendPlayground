@@ -1,0 +1,68 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+button,
+input,
+textarea {
+    font-family: 'Lato', sans-serif;
+}
+
+button {
+    background-color: #fff;
+    border: none;
+}
+
+.line-button {
+    position: relative;
+    padding: 18px 30px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: #151b26;
+    cursor: pointer;
+}
+
+.line-button:focus {
+    outline: none;
+}
+
+/* 가상요소는 기본적으로 inline 요소, but position: absolute를 하게 되면 block으로 신분상승 */
+.line-button::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #0066ff;
+    transition: width 250ms ease-in, background-color 250ms ease-in;
+}
+
+.line-button:hover::after {
+    width: 100%;
+    background-color: hotpink;
+}
+
+/* 번외 */
+
+.parent {
+    position: relative;
+    background-color: hotpink;
+    height: 500px;
+}
+
+.child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    background-color: lightblue;
+    z-index: 0;
+    height: 200px;
+    transform: translate(-50%, -50%);
+}
