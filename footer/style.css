@@ -1,0 +1,37 @@
+#page-container {
+    position: relative;
+    min-height: 100vh;
+}
+#content-wrap {
+    padding-bottom: 5rem; /* 푸터 높이 */
+    width: 100%;
+}
+
+#contents {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #2e2e31;
+    width: 100%;
+    height: 500px;
+    background-color: lightgreen;
+    border: 1px solid green;
+}
+    
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    color: #2e2e31;
+
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem; /* 푸터 높이 */
+    background-color: lightsalmon;
+}
+body {
+    margin: 0;
+}
